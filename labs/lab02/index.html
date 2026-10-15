@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Subscribe Redesign</title>
+    <link rel="stylesheet" href="lab02.css"> 
+    <script src="lab02.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="maintitle">
+        <h1>Rediseño de YouTube</h1>
+        <span>Un rediseño del desplegable de suscripciones de YouTube</span>
+        </div>
+    </header>
+    <main>
+        <div class="commonText">
+            <h2>Aplicación seleccionada</h2>
+            <p>La aplicación que seleccioné es YouTube, la funcionalidad que atiendo es la de expandir la lista de los
+                canales a los que esta suscrito un usuario. <br> La tarea consiste en rediseñar una función de la aplicación
+                seleccionada, con el proposito de mejorarla de cualquier manera que aplique a la función.
+            </p>
+            <h2>Flujo actual y propuesta</h2>
+        </div>
+
+        <div class="flexContainer">
+            <div class="featureContainer">
+                <h3>Actual</h3>
+                <ul id="oldList" class="allLists">
+                    <li>Subscriptions ></li>
+                    <li>ExampleChannel1</li>
+                    <li>ExampleChannel2</li>
+                    <li>ExampleChannel3</li>
+                    <li>ExampleChannel4</li>
+                    <li>ExampleChannel5</li>
+                    <li>ExampleChannel6</li>
+                    <li class="starthere">ExampleChannel7</li>
+                    <li class="starthere">ExampleChannel8</li>
+                    <li class="starthere">ExampleChannel9</li>
+                    <li class="starthere">ExampleChannel10</li>
+                    <li class="starthere">ExampleChannel11</li>
+                    <li class="starthere">ExampleChannel12</li>
+                    <li class="starthere">ExampleChannel13</li>
+                    <li class="showMore" id="showmore1">Show more</li>
+                    <li class="showLess" id="showless1">Show less</li>
+                </ul>
+            </div>
+            <div class="featureContainer">
+                <h3>Propuesta</h3>
+                <ul id="newList" class="allLists">
+                    <li>Subscriptions ></li>
+                    <li>ExampleChannel1</li>
+                    <li>ExampleChannel2</li>
+                    <li>ExampleChannel3</li>
+                    <li>ExampleChannel4</li>
+                    <li>ExampleChannel5</li>
+                    <li>ExampleChannel6</li>
+                    <li class="starthere">ExampleChannel7</li>
+                    <li class="starthere">ExampleChannel8</li>
+                    <li class="starthere">ExampleChannel9</li>
+                    <li class="starthere">ExampleChannel10</li>
+                    <li class="starthere">ExampleChannel11</li>
+                    <li class="starthere">ExampleChannel12</li>
+                    <li class="starthere">ExampleChannel13</li>
+                    <li class="showMore">Show more</li>
+                    <li class="showLess">Show less</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="commonText">
+            <h2>Justificación</h2>
+            <p>La razon por la que decidi hacer este cambio se debe a que el diseño anterior hace que todos los elementos debajo
+                se muevan, por lo que se tiene que scrollear hasta el final de las suscripciones para poder acceder a esos elementos
+                con este nuevo diseño esto desaparace ya que el scroll se encapsula, permitiendo que todos los elementos se mantengan
+                donde están y al mismo tiempo ofrecer la misma funcionalidad.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>
