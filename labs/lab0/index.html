@@ -1,11 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PARTYNEXTDOOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lab01.css">
 </head>
-<body>
-    
+<body class="locked-scroll">
+
+    <div id="introOverlay" class="intro-overlay">
+        <div class="overlay-content">
+            <span class="overlay-tag">Rendimiento</span>
+            <h1 class="overlay-title">¿DESEAS ACTIVAR EFECTOS?</h1>
+            <p class="overlay-desc">Esto activara el movimiento de las letras dependiendo del cursor</p>
+            <div class="overlay-buttons">
+                <button id="btnYes" class="overlay-btn btn-yes">SÍ</button>
+                <button id="btnNo" class="overlay-btn btn-no">NO</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-watermark">PND</div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header class="navbar" id="navbar">
+        <a href="#home" class="logo">PND</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#favorites">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="hero-tag">El mejor artista del mundo</span>
+            <h1>PARTYNEXTDOOR</h1>
+            <p>Jahron Anthony Brathwaite, mejor conocido como PARTYNEXTDOOR, se enfoca principalemnte en R&B atmosférico contemporáneo, definitivamente el mejor en este campo.</p>
+        </div>
+        <div class="hero-image-container">
+            <img src="imagenes/partynextdoor-red.jpg" class="hero-img">
+        </div>
+    </section>
+
+    <section id="about" class="section-container">
+        <div class="section-header">
+            <h2>About</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-bio card">
+                <h3>Biografía</h3>
+                <p>Nacido el 3 de julio de 1993 en Mississauga, Ontario, Canadá, PARTYNEXTDOOR comienza haciendo música usando su nombre real antes de convertirse en el primer artista firmado por la discográfica OVO Sound de Drake en 2013.</p>
+                <p>Su estilo mejora la escena del R&B moderno a través del uso de reverberaciones densas, letras íntimas y una producción en donde compone y produce la mayoría de su propio material.</p>
+            </div>
+            <div class="about-highlights card">
+                <h3>Datos y Logros Clave</h3>
+                <ul>
+                    <li>Primer fichaje oficial de OVO Sound fundado por Drake (2013).</li>
+                    <li>Compositor de "Work" interpretado por Rihanna y Drake.</li>
+                    <li>Nominado al Grammy por Mejor Canción de R&B con "Come and See Me" (2017).</li>
+                    <li>Colaborador de artistas como Kanye West, Travis Scott y Calvin Harris.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="section-container">
+        <div class="section-header">
+            <h2>Works</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="works-grid">
+            <article class="work-card card">
+                <img src="imagenes/partynextdoor.png" class="work-img">
+                <div class="work-info">
+                    <h3>PARTYNEXTDOOR (2013)</h3>
+                    <p>El album que lo llevo a las estrellas, incluye temas que me encantan como "Relax with Me", "TBH", "Right Now" entre otros.</p>
+                </div>
+            </article>
+
+            <article class="work-card card">
+                <img src="imagenes/partynextdoortwo.jpg" class="work-img">
+                <div class="work-info">
+                    <h3>PARTYNEXTDOOR TWO (2014)</h3>
+                    <p>Un álbum nocturno que contiene éxitos globales como "Recognize" y de hecho en este album esta la primer canción que escuché, "Her Way".</p>
+                </div>
+            </article>
+
+            <article class="work-card card">
+                <img src="imagenes/px3.jpg" class="work-img">
+                <div class="work-info">
+                    <h3>PARTYNEXTDOOR 3 / P3 (2016)</h3>
+                    <p>Un proyecto experimental que abre sus horizontes, dentro de las canciones que me resultan mas interesantes están: "High Hopes", "Transparency", "Don't Know How".</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="favorites" class="section-container">
+        <div class="section-header">
+            <h2>Favorites</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="favorites-grid">
+            <div class="favorite-card card">
+                <span class="track-number">01</span>
+                <h3>Her Way</h3>
+                <p>Fue la primera canción que escuché de PARTYNEXTDOOR en un TikTok de un chico que hacía videos de Omegle, esta canción, además de ser increíble, siempre tendrá un lugar en mi corazón por ser la razón de que siga escuchando a PARTYNEXTDOOR.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/NRw85nnt6kw?si=hNpNyqxl4DbMlqfO" title="PARTYNEXTDOOR - Her Way" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="favorite-card card">
+                <span class="track-number">02</span>
+                <h3>Thirsty</h3>
+                <p>Me encanta la instrumental y la voz de la chica que repite "Thirsty", el coro también es una belleza sin duda alguna y ojalá durara más esta canción, una melodía que te hace apreciar la vida, no sé qué haríamos sin PARTYNEXTDOOR.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/esEfJ03L3ZQ?si=DgIIQ9oxkA4zJcc8" title="PARTYNEXTDOOR - Thirsty" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="favorite-card card">
+                <span class="track-number">03</span>
+                <h3>FWU</h3>
+                <p>El inicio me parece el mejor inicio de todas sus canciones, cada vez que lo escucho, me fascina más y más, fácilmente una de sus mejores canciones, aunque todas sean excelentes, esta es especial.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Wr6xDaaX2WQ?si=58ATgt5gZKW9BXQs" title="PARTYNEXTDOOR - FWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Alfaro Salcedo | Lab 01</p>
+    </footer>
+
+    <script>
+        const glow = document.getElementById('cursorGlow');
+        const navbar = document.getElementById('navbar');
+        const overlay = document.getElementById('introOverlay');
+        const btnYes = document.getElementById('btnYes');
+        const btnNo = document.getElementById('btnNo');
+
+        window.addEventListener('mousemove', (e) => {
+            glow.style.left = `${e.clientX}px`;
+            glow.style.top = `${e.clientY}px`;
+        });
+
+        navbar.addEventListener('mouseenter', () => {
+            glow.style.opacity = '0';
+        });
+
+        navbar.addEventListener('mouseleave', () => {
+            glow.style.opacity = '1';
+        });
+
+        function removeOverlay() {
+            overlay.classList.add('hide');
+            document.body.classList.remove('locked-scroll');
+        }
+
+        btnYes.addEventListener('click', () => {
+            removeOverlay();
+            letrasparaarriba('h1, h2, h3, .logo, .navbar a, .hero-tag, .btn-primary, .track-number');
+        });
+
+        btnNo.addEventListener('click', () => {
+            removeOverlay();
+        });
+
+        function letrasparaarriba(selector) {
+            const containers = document.querySelectorAll(selector);
+
+            containers.forEach(el => {
+                if (el.children.length === 0) {
+                    const words = el.textContent.trim().split(/\s+/);
+                    if (words.length === 0 || words[0] === '') return;
+                    el.innerHTML = words.map(word => {
+                        const letters = word.split('').map(char => `<span class="glow-char">${char}</span>`).join('');
+                        return `<span class="word-group">${letters}</span>`;
+                    }).join(' ');
+                }
+            });
+
+            const RADIUS = 95;
+
+            window.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                containers.forEach(container => {
+                    const box = container.getBoundingClientRect();
+
+                    if (
+                        mouseX >= box.left - RADIUS &&
+                        mouseX <= box.right + RADIUS &&
+                        mouseY >= box.top - RADIUS &&
+                        mouseY <= box.bottom + RADIUS
+                    ) {
+                        const chars = container.querySelectorAll('.glow-char');
+                        chars.forEach(char => {
+                            const rect = char.getBoundingClientRect();
+                            const charX = rect.left + rect.width / 2;
+                            const charY = rect.top + rect.height / 2;
+                            const dist = Math.hypot(mouseX - charX, mouseY - charY);
+
+                            if (dist < RADIUS) {
+                                if (char._isPending) return;
+
+                                if (char.classList.contains('active-glow')) {
+                                    clearTimeout(char._glowTimeout);
+                                    char._glowTimeout = setTimeout(() => {
+                                        char.classList.remove('active-glow');
+                                    }, 1400);
+                                    return;
+                                }
+
+                                const delay = Math.round((dist / RADIUS) * 180);
+                                char._isPending = true;
+
+                                setTimeout(() => {
+                                    char._isPending = false;
+                                    char.classList.add('active-glow');
+
+                                    clearTimeout(char._glowTimeout);
+                                    char._glowTimeout = setTimeout(() => {
+                                        char.classList.remove('active-glow');
+                                    }, 1400);
+                                }, delay);
+                            }
+                        });
+                    }
+                });
+            });
+        }
+    </script>
 </body>
 </html>
