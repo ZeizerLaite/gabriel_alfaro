@@ -1,18 +1,51 @@
+html,body{
+    font-family: "Saira", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.allLists{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.featureContainer li {
+    padding-top: 0.5rem;
+}
 .flexContainer{
     display: flex;
     justify-self: center;
     gap: 10rem;
 }
 .featureContainer{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 10px;
     height: fit-content;
     transition: all 0.3s ease;
 }  
 
+.showsvg{
+    transform: translateY(5px);
+    padding: 0;
+    margin: 0;
+}
+.subicon{
+    transform: translateY(7px) scale(0.7);
+}
+.featureContainer{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.youtube{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
 #newList{
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     max-height: 280px;
 }
@@ -24,10 +57,16 @@ li.oculto {
     padding: 0 !important;
     transition: all 0.4s ease-out;
 }
+
 .starthere{
     display: none;
 }
-
+.showMore{
+    padding: 0 !important;
+}
+.showlessSvg{
+    transform: translateY(5px);
+}
 ul::-webkit-scrollbar {
     width: 6px;
 }
@@ -55,26 +94,16 @@ li.mostrar {
 .flexContainer h3{
     text-align: center;
     text-transform: uppercase;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 5px;
 }
-.featureContainer li {
-    padding-top: 0.5rem;
-}
-.allLists{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
 #maintitle{
     justify-self: center;
     text-align: center;
     text-transform: uppercase;
 }
-body{
-    margin: 0;
-    padding: 0;
-}
 
-html,body{
-    font-family: "Saira", sans-serif;
+.scrolling{
+    overflow-y: auto !important;
 }

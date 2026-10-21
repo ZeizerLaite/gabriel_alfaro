@@ -13,10 +13,10 @@ function unhide(type, listItems) {
         listItems.forEach(element => {
             if (current >= 7 && element.innerHTML != "Show less") {
                 element.style.display = "list-item"
-            } else if (current >=14) {
+            }
                 showless1.style.display = "list-item"
                 showmore1.style.display = "none"
-            }
+            
             current++
         });
     } else if(type == 2) {
@@ -25,9 +25,10 @@ function unhide(type, listItems) {
                 element.classList.remove("oculto")
                 element.classList.add("mostrar")
                 element.style.maxHeight = element.scrollHeight + "px"
-            } else if (current >=14) {
-                showmore2.style.display = "none"
             }
+                showmore2.style.display = "none"
+                document.getElementById("newList").classList.add("scrolling")
+
             current++
         });
         
@@ -43,13 +44,13 @@ function hide(type, listItems){
     if (current >= 7 && element.innerHTML != "Show more")
     {
         element.style.display = "none"
-    } else if (current >=14)
-    {
+    }
         showless1.style.display = "none"
         showmore1.style.display = "list-item"
-    }
+    
     current++
 }); } else if (type == 2) {
+    //undefined
 }
 }
 
@@ -64,7 +65,4 @@ showless1.addEventListener('click', (e) =>{
 showmore2.addEventListener('click', (e) =>{
     unhide(2, listItemsnew)
 })
-showless2.addEventListener('click', (e) =>{
-    hide(2,listItemsnew)
-}) 
 
